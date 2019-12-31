@@ -2,6 +2,7 @@ package com.example.hong_study;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
         btn_test.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 //btn_test.setText("홍드로이드");
-                et_test.setText("홍드로이드");
+                Intent intent = new Intent(MainActivity.this, SubActivity.class);
+                startActivity(intent);
             }
                                     }
 
