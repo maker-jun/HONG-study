@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         btn_test.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                //btn_test.setText("hong");
-                et_test.setText("hong");
+                //btn_test.setText("홍드로이드");
+                et_test.setText("홍드로이드");
             }
                                     }
 
