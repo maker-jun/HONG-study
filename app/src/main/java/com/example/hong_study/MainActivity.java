@@ -7,11 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btn_test;
     EditText et_test;
+    ImageView test;
 
 
 
@@ -23,15 +26,20 @@ public class MainActivity extends AppCompatActivity {
         et_test=(EditText)findViewById(R.id.et_test);
 
         btn_test = (Button)findViewById(R.id.btn_test);
-
         btn_test.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 //btn_test.setText("홍드로이드");
                 Intent intent = new Intent(MainActivity.this, SubActivity.class);
                 startActivity(intent);
             }
-                                    }
+        });
 
-        );
+        test = (ImageView)findViewById(R.id.test);
+        test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "홍드로이드 잘생김", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
